@@ -1,48 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <title>My Awesome Company Contact Page</title>
-  </head>
-  <body>
 
-    <h1>Company Inc.</h1>
-    <h2>For all your incorporated company needs</h2>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>My Awesome Company Contact Page</title>
+</head>
 
-    <!-- First, create a form tag where our inputs will be nested -->
+<body>
 
+  <h1>Company Inc.</h1>
+  <h2>For all your incorporated company needs</h2>
+  <form method="get" action="validate.php">
+    <label for="fullname">Enter Name</label>
+    <input type="text" name="fullname" id="fullname" placeholder="Enter Name">
+    <br><br>
+    <label for="email">Email address</label>
+    <input type="text" name="email" id="email" placeholder="Enter Email">
+    <br><br>
+    <label for="phone">Enter your phone number:</label>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+    <br><br>
+    <label for="message">Enter massage</label>
+    <br>
+    <textarea id="message" name="message" rows="4" cols="50" form="usrform">Enter text here...</textarea>
+    <br><br>
+    <label>I want to receive</label><br>
+    <input type="checkbox" id="check_1" name="check_1" value="The weekly newsletter">
+    <label for="check_1">The weekly newsletter</label><br>
+    <input type="checkbox" id="check_2" name="check_2" value="Every month">
+    <label for="check_2">Every month</label><br>
+    <input type="checkbox" id="check_3" name="check_3" value="Only importan information">
+    <label for="check_3">Only importan information</label><br><br>
+    <br>
+    <input type="submit" value="Submit">
+    <br><br>
+  </form>
 
-      <!-- Add a label for 'fullname'-->
-
-      <!-- Add a text input with the id and name attributes set to 'fullname' -->
-      <!-- Include the place holder text "Enter Name" and make this input required -->
-
-
-      <!-- Add a label for 'email'-->
-
-      <!-- Add a email input with the id and name attributes set to 'email' -->
-      <!-- Include the place holder text "Enter Email" and make this input required -->
-
-
-      <!-- Add a label for 'phone'-->
-
-      <!-- Add a telephone input with the id and name attributes set to 'phone' -->
-      <!-- Include the place holder text "Enter Telephone (optional)" -->
-
-
-      <!-- Add a label for 'message'-->
-
-      <!-- Add a textarea tag with the id and name attributes set to 'message' -->
-      <!-- Include the place holder text "Enter Message" -->
-
-
-      <!-- Add a checkbox input with the id set to 'checkbox' -->
-
-
-
-      <!-- Add an input with the type set to 'submit' -->
-
-    
-  </body>
+</body>
 </html>
